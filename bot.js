@@ -14,9 +14,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!cancel') {
-    	message.reply('There can be many reasons why your order was canceled.');
-    	message.reply('> test');
+    if (message.content === 'ping') {
+    	message.reply('Pong');
   	}
 });
 

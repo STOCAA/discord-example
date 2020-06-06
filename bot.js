@@ -3,18 +3,16 @@ const client = new Discord.Client();
 
 const prefix = '!' //prefix
 
-let roleID = "718580702626447391";
-let membersWithRole = message.guild.roles.get(roleID).members;
-console.log(`Got ${membersWithRole.size} members with that role.`);
-
 client.on('ready', () => {
-    client.user.setStatus('ONLINE')
-    client.user.setPresence({
-        game: {
-            name: '${membersWithRole.size} Members',
-            type: 3
-        }
-    });
+        setInterval(() => {
+          targetGuild = client.guilds.get('710684522118905997')
+          if(targetGuild) {
+              client.user.setPresence({ game: { name: targetGuild.memberCount + ' premier members', type: 'WATCHING' }, status: 'online'  })
+                    .then(console.log)
+                    .catch(console.error);
+          }
+    }, 1000 * 60 * 1);
+
 });
 
 client.on('message', message => {

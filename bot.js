@@ -4,15 +4,13 @@ const client = new Discord.Client();
 const prefix = '!' //prefix
 
 client.on('ready', () => {
-        setInterval(() => {
-          targetGuild = client.guilds.get('710684522118905997')
-          if(targetGuild) {
-              client.user.setPresence({ game: { name: targetGuild.memberCount + ' premier members', type: 'WATCHING' }, status: 'online'  })
-                    .then(console.log)
-                    .catch(console.error);
-          }
-    }, 1000 * 60 * 5);
-
+    client.user.setStatus('ONLINE')
+    client.user.setPresence({
+        game: {
+            name: '0 Premier Members',
+            type: 3
+        }
+    });
 });
 
 client.on('message', message => {

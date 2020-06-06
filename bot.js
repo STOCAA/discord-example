@@ -15,9 +15,15 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('Pong.');
-  	}
-});
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "Test:",
+      fields: [
+        { name: "Test 1", value: "Line1\nLine2\nLine3", inline: true},
+        { name: "Test 2", value: "AlsoLine1\nAlsoLine2\nAndLine3", inline: true}
+      ]
+    }
+  });
 
 
 // THIS  MUST  BE  THIS  WAY

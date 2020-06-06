@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'What is premier?') {
+    	message.reply('For information on premier, please read #『🤝』partners');
   	}
 });
 

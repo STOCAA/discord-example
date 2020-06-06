@@ -8,7 +8,7 @@ client.on('ready', () => {
     client.user.setPresence({
         game: {
             name: 'Premier Members',
-            type: 2
+            type: 3
         }
     });
 });

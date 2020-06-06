@@ -14,16 +14,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    message.channel.send({embed: {
-      color: 3447003,
-      title: "Test:",
-      fields: [
-        { name: "Test 1", value: "Line1\nLine2\nLine3", inline: true},
-        { name: "Test 2", value: "AlsoLine1\nAlsoLine2\nAndLine3", inline: true}
-      ]
-    }
-  });
+    if (message.content === '!cancel') {
+    	message.reply('There can be many reasons why your order was canceled.');
+    	message.reply('> test');
+  	}
+});
+
 
 
 // THIS  MUST  BE  THIS  WAY

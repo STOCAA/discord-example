@@ -14,8 +14,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'how much money') {
-        message.channel.send('All storecards that we offer can go up to $1000.');
+    if (message.content === 'Ping') {
+        message.channel.send('Pong');
   	}
 });
 

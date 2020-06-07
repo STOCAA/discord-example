@@ -14,7 +14,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '@Rуan#4716') {
+    if (message.content === '@Rуan') {
         message.channel.send('Please refrain from pinging staff, we will eventually respond.');
   	}
 });

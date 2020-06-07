@@ -14,8 +14,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '@Rуan') {
-        message.channel.send('Please refrain from pinging staff, we will eventually respond.');
+    if (message.content === 'Name on card') {
+        message.channel.send('The name on the card should be the same one as your account name.');
   	}
 });
 

@@ -7,7 +7,7 @@ client.on('ready', () => {
     client.user.setStatus('ONLINE')
     client.user.setPresence({
         game: {
-            name: '5 Premier Members',
+            name: '6 Premier Members',
             type: 3
         }
     });

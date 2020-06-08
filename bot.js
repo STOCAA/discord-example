@@ -19,7 +19,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'is this legal') {
+        message.channel.send('Yes, this is legal.');
+  	}
+});
 
+client.on('message', message => {
+    if (message.content === 'is this real') {
+        message.channel.send('This server is real/legit, please look at #vouches for proof.');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot 

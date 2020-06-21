@@ -7,7 +7,7 @@ client.on('ready', () => {
     client.user.setStatus('ONLINE')
     client.user.setPresence({
         game: {
-            name: '1 Premier Members',
+            name: 'Shoppy.gg/SCDB',
             type: 3
         }
     });
